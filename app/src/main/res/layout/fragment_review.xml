@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/alarmreport"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/alarm"
+            android:padding="5dp"
+            android:text=" ALARM REPORT | گزارش آلارم "
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/weatherstationReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/weather"
+            android:padding="5dp"
+            android:text=" weather.S|ایستگاه‌هواشناسی"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alarmreport" />
+
+        <Button
+            android:id="@+id/measuringstationReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/mesure"
+            android:padding="5dp"
+            android:text="ایستگاه‌اندازه‌گیری | Measure.S"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weatherstationReview" />
+
+        <Button
+            android:id="@+id/heatersReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/heater"
+            android:padding="10dp"
+            android:text="بــخــاری | Heater"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/measuringstationReview" />
+
+        <Button
+            android:id="@+id/ventsReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/vent"
+            android:padding="5dp"
+            android:text="دریــچه ها | VENTS"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heatersReview" />
+
+        <Button
+            android:id="@+id/fansReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/fan"
+            android:padding="10dp"
+            android:text=" FANSPADS | فـن ها و پـد ها"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ventsReview" />
+
+        <Button
+            android:id="@+id/abyariReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/abyar011"
+            android:padding="10dp"
+            android:text="آبـیـاری | IRRIGATION"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fansReview" />
+
+        <Button
+            android:id="@+id/gardshiReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/fangardesh"
+            android:padding="10dp"
+            android:text="فـن هـای چـرخشی |C.FANS "
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abyariReview" />
+
+        <Button
+            android:id="@+id/mehpashReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/meh"
+            android:padding="10dp"
+            android:text="مـه پــاش ها | FOGGERS"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gardshiReview" />
+
+        <Button
+            android:id="@+id/shadesReview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/shades"
+            android:padding="10dp"
+            android:text="پـــرده ها | SHADES"
+            android:gravity="left|center_vertical"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mehpashReview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+

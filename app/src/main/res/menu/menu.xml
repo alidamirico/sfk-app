@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/ic_order"
+    android:icon="@drawable/ic_toggle"
+    android:title="دستورات"
+    android:state_pressed="false"/>
+    <item
+        android:id="@+id/ic_comment"
+        android:icon="@drawable/ic_comment"
+        android:title="پیام ها"
+        android:state_pressed="false"/>
+    <item
+        android:id="@+id/ic_reports"
+        android:icon="@drawable/ic_report"
+        android:title="گزارش گیری"
+        android:state_pressed="false"/>
+</menu>

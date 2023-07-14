@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="home_iconc">#0A89ED</color>
+    <color name="control_icon">#FB0226</color>
+    <color name="review_icon">#D38512</color>
+    <color name="chat_icon">#7AAC41</color>
+    <color name="settings_icon">#4A615F </color>
+    <color name="purple_500">#8BC34A</color>
+    <color name="purple_700">#8BC34A</color>
+    <color name="my_menu_unselected_color">#F4DDD6</color>
+    <color name="my_menu_badge_color">#FF1200</color>
+    <color name="teal_200">#8BC34A</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bk_chip">#FFFFFF</color>
+    <color name="home_icon">#171515</color>
+    <color name="home_label">#131313</color>
+</resources>

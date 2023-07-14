@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setnumberActivity">
+
+    <ImageView
+        android:id="@+id/headerT"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/systemnumberbanner" />
+
+
+    <TextView
+        android:id="@+id/setnumGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="لطفا شماره را بدون 0 یا +98 وارد کنید"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerT"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LidEdtPhoneReview"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setnumGuide">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setNumberText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="مثال : 9123457897"
+            android:ellipsize="start"
+            android:inputType="number"
+            android:gravity="center_horizontal"
+            android:maxLength="10"
+            android:textAlignment="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ذخیره شماره سیستم انتخاب شده"
+        android:textColor="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LidEdtPhoneReview" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/colorcard"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectText">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="* در صورت وارد نکردن شماره نرم افزار به درستی کار نخواهد کرد"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="* برای تغییر شماره آن را انتخاب کنید و از کادر بالا قدام به ویرایش کنید"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="* برای انتخاب شماره از لیست بالا شماره مورد نظر را انتخاب و در اخر گزینه انتخاب شماره سیستم را کلیک کنید"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupNums"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/raidobg"
+        android:layout_gravity="start"
+        android:layoutDirection="rtl"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn">
+        <RadioButton
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layoutDirection="rtl"
+        android:text="شماره سیستم اول ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید)"
+        android:textAlignment="textStart"
+        android:textSize="10sp" />
+
+        <RadioButton
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layoutDirection="rtl"
+        android:text="شماره سیستم دوم ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید)"
+        android:textAlignment="textStart"
+        android:textSize="10sp" />
+
+        <RadioButton
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layoutDirection="rtl"
+        android:text="شماره سیستم سوم ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید) "
+        android:textAlignment="textStart"
+        android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/num4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layoutDirection="rtl"
+            android:text="شماره سیستم چهارم ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید) "
+            android:textAlignment="textStart"
+            android:textSize="10sp" />
+
+</RadioGroup>
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="انتخاب شماره سیستم"
+        android:textColor="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupNums" />
+
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:text="شماره انتخاب شده "
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/selectBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

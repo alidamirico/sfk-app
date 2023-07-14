@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_icon"
+        android:title=""
+        app:cnb_backgroundColor="@color/bk_chip"
+        app:cnb_iconColor="@color/home_iconc"
+        app:cnb_textColor="@color/home_label" />
+    <item
+        android:id="@+id/review"
+        android:enabled="true"
+        android:icon="@drawable/review_icon"
+        android:title=""
+        app:cnb_backgroundColor="@color/bk_chip"
+        app:cnb_iconColor="@color/review_icon"
+        app:cnb_textColor="@color/home_label" />
+    <item
+        android:id="@+id/control"
+        android:enabled="true"
+        android:icon="@drawable/button_on"
+        android:title=""
+        app:cnb_backgroundColor="@color/bk_chip"
+        app:cnb_iconColor="@color/control_icon"
+        app:cnb_textColor="@color/home_label" />
+    <item
+        android:id="@+id/message"
+        android:enabled="true"
+        android:icon="@drawable/chat_iocn"
+        android:title=""
+        app:cnb_backgroundColor="@color/bk_chip"
+        app:cnb_iconColor="@color/chat_icon"
+        app:cnb_textColor="@color/home_label" />
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/settings_icon"
+        android:title=""
+        app:cnb_backgroundColor="@color/bk_chip"
+        app:cnb_iconColor="@color/settings_icon"
+        app:cnb_textColor="@color/home_label" />
+
+
+</menu>

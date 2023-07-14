@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Sfk" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/home_icon</item>
+        <item name="fontFamily">@font/irsans</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="1">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:windowBackground">@drawable/laoding_bg</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+    <style name="AlertDialogThemeAnswer" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:windowBackground">@drawable/laoding_bg</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyleAnswer</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyleAnswer</item>
+    </style>
+
+    <style name="AlertDialogThemeLoading" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/laoding_bg</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">#FAE109</item>
+    </style>
+
+    <style name="NegativeButtonStyleAnswer" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#850404</item>
+    </style>
+
+    <style name="PositiveButtonStyleAnswer" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#0BF82B</item>
+    </style>
+    <style name="loadingColor" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#0D92FB</item>
+    </style>
+
+
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#850404</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#22DD15</item>
+    </style>
+
+    <style name="myStyle">
+        <item name="android:textSize">9px</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

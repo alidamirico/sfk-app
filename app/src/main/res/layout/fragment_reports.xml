@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity">
+
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/headerT"-->
+        <!--        android:layout_width="394dp"-->
+        <!--        android:layout_height="69dp"-->
+        <!--        android:layout_marginTop="2dp"-->
+        <!--         -->
+        <!--        android:padding="5dp"-->
+        <!--        android:text="تنظیمات "-->
+        <!--        android:textColor="#FFFFFF"-->
+        <!--        android:textSize="30dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <Button
+            android:id="@+id/systemNumber"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/numberslogo"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="شماره های سیستم | S.NUMBERS"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/rigster"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/regestericon"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="ثـبـت شــماره | R.NUMBER"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/systemNumber" />
+
+
+        <Button
+            android:id="@+id/deletNaumber"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/deleteicon"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="حــذف شمـاره | DELETE NIMBER"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rigster" />
+
+        <Button
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/passwordicon"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="تنظیمات رمز عبور | PASSWORD.S"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deletNaumber" />
+
+        <Button
+            android:id="@+id/mci"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/mcinet"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="مشـاهده شارژ همراه اول | MCI"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <Button
+            android:id="@+id/mtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/mtnlogo"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="مشاهده شارژ ایرانسل | MTN"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mci" />
+
+        <Button
+            android:id="@+id/gsmVersion"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/smsversionicon"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="ورژن پیـام رسـان | GSM.V"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mtn" />
+
+        <Button
+            android:id="@+id/gsmTest"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/smstesticon"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="تـست پیـام رسـان | GSM TEST"
+            android:textSize="14sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gsmVersion" />
+
+        <Button
+            android:id="@+id/aboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/aboutusicon"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="درباره ما | about US"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gsmTest" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gsmReset" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

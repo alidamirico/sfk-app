@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_marginBottom="2dp"
+android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bokharyrieportActivity">
+
+    <ImageView
+        android:id="@+id/headerT"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/heaterreviewbaner"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/colorcard"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerT">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bokharReport3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="بخاری 3"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bokharReport2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:insetRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetBottom="5dp"
+                android:text="بخاری 2"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:insetRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetBottom="5dp"
+                android:text="بخاری 1"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bokharReport6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetRight="5dp"
+                android:insetBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="بخاری 6"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:insetRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetBottom="5dp"
+                android:text="بخاری 5"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:insetRight="5dp"
+                android:background="@drawable/colorcard"
+                android:insetBottom="5dp"
+                android:text="بخاری 4"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bokharReport9"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetRight="5dp"
+                android:insetBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="بخاری 9"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport8"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:insetRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetBottom="5dp"
+                android:text="بخاری 8"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport7"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:insetRight="5dp"
+                android:background="@drawable/colorcard"
+                android:insetBottom="5dp"
+                android:text="بخاری 7"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bokharReport12"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetRight="5dp"
+                android:insetBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="بخاری12"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport11"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:insetRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetBottom="5dp"
+                android:text="بخاری11"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport10"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:insetRight="5dp"
+                android:background="@drawable/colorcard"
+                android:insetBottom="5dp"
+                android:text="بخاری10"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bokharReport15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetRight="5dp"
+                android:insetBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="بخاری15"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bokharReport14"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:insetRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/colorcard"
+                android:padding="5dp"
+                android:insetBottom="5dp"
+                android:text="بخاری14"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+
+            <Button
+                android:id="@+id/bokharReport13"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                 android:layout_height="60dp"
+                android:insetLeft="5dp"
+                android:insetTop="5dp"
+                android:padding="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:insetRight="5dp"
+                android:background="@drawable/colorcard"
+                android:insetBottom="5dp"
+                android:text="بخاری13"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"  />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

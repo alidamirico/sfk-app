@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">سابرینا همراه</string>
+    <string name="alicode">به نرم افزار سابرینا فراز  خوش آمدید!</string>
+    <string name="ali">این یک برنامه تست و تحت اعتبار علی دمیری می باشد</string>
+    <string name="permission_required">دستسری لازم برای ارسال پیام را بدهید</string>
+    <string name="ok">باشه</string>
+    <string name="permission_granted">دسترسی لازم داده شد . هم اکنون می توانید از برنامه استفده کنید</string>
+
+    <string name="app_intro_skip_button">
+         گذشتن
+    </string>
+    <string name="app_intro_next_button">
+         بعدی
+    </string>
+    <string name="app_intro_back_button">
+         برگشت
+    </string>
+    <string name="app_intro_done_button">
+         تمام
+    </string>
+    <string name="slide_one_top_text">به نرم افزار رسمی سابرینا همراه خوش آمدید!</string>
+    <string name="slide_one_down_text">علامت فلش ➡️ رو بزنید تا به مرحله بعد بروید و یا در صورت تمایل با فشردن گزینه 🚪از مرحله  راهنما عبور کنید </string>
+    <string name="slide_two_top_text">بسیار خب، حالا برای ارسال دستورات احتیاج به دسترسی ارسال پیام داریم</string>
+    <string name="slide_two_down_text">علامت فلش ➡️ رو بزنید تا دسترسی پیامک رو بدهید</string>
+    <string name="slide_three_top_text">حالا برای دریافت جواب دستورات احتیاج به دسترسی وضعیت ارسال و تلفن داریم</string>
+    <string name="slide_three_down_text">با زدن گزینه ➡️️ دسترسی وضعیت تلفن را به ما بدهید </string>
+    <string name="slide_four_top_text"> راهنمای رمز عبور نرم افزار</string>
+    <string name="slide_four_down_text">رمز عبور پیشفرض نرم افزار عدد 2 می باشد و شما می تونید اون رو از بخش مربوط به رمز عبور در تنظیمات تعویض کنید</string>
+    <string name="slide_five_top_text">نحوه جایجا شدن بین منو نرم افزار</string>
+    <string name="slide_five_down_text">برای جابجا شدن بین منو ها کافیه که ایکون مربوط به منو رو کلیک کنید منو ها به 4 مورد تقسیم می شوند</string>
+    <string name="slide_Six_top_text">نرم افزار آماده به کار !</string>
+    <string name="slide_Six_down_text">بخش راهنما به اتمام رسید از سابرینا همراه لذت ببرید</string>
+    <string name="num1">شماره سیستم اول ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید)</string>
+    <string name="num2">شماره سیستم دوم ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید)</string>
+    <string name="num3">شماره سیستم سوم ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید)</string>
+    <string name="num4">شماره سیستم چهارم ( جهت افزودن یا ویرایش از کادر بالا اقدام کنید)</string>
+    <string name="shownumdef">شما هنوز شماره ای را انتخاب نکردید</string>
+    <string name="selectnum">شماره انتخاب شده : </string>
+    <string name="choosenum"> با موفقیت انتخاب شده </string>
+    <string name="setnumguide1"> * در صورت وارد نکردن شماره نرم افزار به درستی کار نخواهد کرد </string>
+    <string name="messageNumbertext"> شماره تلفن گیرنده را وارد کنید </string>
+    <string name="messagetext"> شماره تلفن گیرنده را وارد کنید </string>
+    <string name="messageClearBtn"> حذف ورودی </string>
+    <string name="messageUpateBtn"> بروزرسانی </string>
+    <string name="messageShowNumAlert"> شماره گیرنده ای وارد نشده است </string>
+    <string name="clearMessage"> تاریخچه پاکسازی شده است </string>
+    <string name="useBtnUp"> جهت نمایش ورودی از گزینه بروزرسانی استفاده کنید </string>
+    <string name="PluseNum"> شماره انتخاب شده :  </string>
+    <string name="enterNumAlert">لطفا ابتدا شماره را وارد کنید</string>
+    <string name="inboxError">صندوق ورودی برای شماره انتخاب شده خالی است!</string>
+    <string name="messageGuide1">برای چک کردن ورودی جدید از گزینه بروزرسانی استفاده کنید</string>
+    <string name="messageGuide2">برای حذف ورودی از گزینه حذف ورودی استفاده کنید</string>
+    <string name="messageGuide3">برای استفاده از این بخش باید ابتدا شماره سیستم را وارد کنید</string>
+    <string name="chatText">گـفتـگوها:</string>
+    <string name="chatHeaderText">سـانـا فـراز کـبیـر</string>
+    <string name="chatHeaderNumber">شماره ای وارد نشده است</string>
+    <string name="wait_for_answer">دستور ارسال شد ، لطفا منتظر پاسخ بمانید</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

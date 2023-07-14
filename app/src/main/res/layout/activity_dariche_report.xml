@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daricheReportActivity">
+
+    <ImageView
+        android:id="@+id/headerT"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ventbanereport" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/colorcard"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerT">
+
+        <Button
+            android:id="@+id/daricheReport1"
+            android:layout_width="300dp"
+             android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:insetLeft="5dp"
+            android:insetTop="5dp"
+            android:insetRight="5dp"
+            android:insetBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="گزارش گیری دریچه اول"
+            android:background="@drawable/colorsreview"
+            android:drawableRight="@drawable/vent"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/daricheReport2"
+            android:layout_width="300dp"
+             android:layout_height="60dp"
+            android:insetLeft="5dp"
+            android:insetTop="5dp"
+            android:insetRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:insetBottom="5dp"
+            android:layout_gravity="center"
+            android:text="گزارش گیری دریچه دوم"
+            android:background="@drawable/colorsreview"
+            android:drawableRight="@drawable/vent"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/daricheReport3"
+            android:layout_width="300dp"
+             android:layout_height="60dp"
+            android:insetLeft="5dp"
+            android:insetTop="5dp"
+            android:insetRight="5dp"
+            android:insetBottom="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="ایستگاه اندازه گیری سوم"
+            android:background="@drawable/colorsreview"
+            android:drawableRight="@drawable/vent"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/daricheReport4"
+            android:layout_width="300dp"
+             android:layout_height="60dp"
+            android:insetLeft="5dp"
+            android:insetTop="5dp"
+            android:insetRight="5dp"
+            android:insetBottom="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="گزارش گیری دریچه چهارم"
+            android:background="@drawable/colorsreview"
+            android:drawableRight="@drawable/vent"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

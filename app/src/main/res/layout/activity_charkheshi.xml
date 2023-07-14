@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".charkheshiActivity">
+
+        <ImageView
+            android:id="@+id/headerT"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fangbaneer" />
+
+        <LinearLayout
+            android:id="@+id/fang1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/controlcard1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerT">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:text="فن چرخشی اول"
+                android:textSize="30sp" />
+
+            <RadioGroup
+            android:background="@drawable/raidobg"
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+android:checkedButton="@+id/manual1"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/reset1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="ریست کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/automatic1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="اتوماتیک کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/manual1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="دستی "
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+
+            <ToggleButton
+                android:id="@+id/option11"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/togglebg"
+                android:text="ToggleButton"
+                android:textColor="#FFFFFF"
+                android:textOff="فن چرخشی خاموش"
+                android:textOn="فن چرخشی روشن" />
+
+            <Button
+                android:id="@+id/sendButton1"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonbg"
+                android:text="ارســال دسـتـور"
+                app:backgroundTint="#00FFFFFF"
+                app:backgroundTintMode="src_atop"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fang2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/controlcard2"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fang1">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:text="فن چرخشی دوم"
+                android:textSize="30sp" />
+
+            <RadioGroup
+            android:background="@drawable/raidobg"
+                android:id="@+id/radioGroup2"
+android:checkedButton="@+id/manual2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/reset2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="ریست کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/automatic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="اتوماتیک کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/manual2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="دستی "
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+
+            <ToggleButton
+                android:id="@+id/option12"
+                    android:textColor="#FFFFFF"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/togglebg"
+                android:text="ToggleButton"
+                android:textOff="فن چرخشی خاموش"
+                android:textOn="فن چرخشی روشن" />
+
+            <Button
+                android:id="@+id/sendButton2"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonbg"
+                android:text="ارســال دسـتـور"
+                app:backgroundTint="#00FFFFFF"
+                app:backgroundTintMode="src_atop"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fang3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/controlcard1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fang2">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:text="فن چرخشی سوم"
+                android:textSize="30sp" />
+
+            <RadioGroup
+            android:background="@drawable/raidobg"
+                android:id="@+id/radioGroup3"
+android:checkedButton="@+id/manual3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/reset3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="ریست کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/automatic3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="اتوماتیک کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/manual3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="دستی "
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+
+            <ToggleButton
+                android:id="@+id/option13"
+                    android:textColor="#FFFFFF"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/togglebg"
+                android:text="ToggleButton"
+                android:textOff="فن چرخشی خاموش"
+                android:textOn="فن چرخشی روشن" />
+
+            <Button
+                android:id="@+id/sendButton3"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonbg"
+                android:text="ارســال دسـتـور"
+                app:backgroundTint="#00FFFFFF"
+                app:backgroundTintMode="src_atop"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fang4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/controlcard2"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fang3">
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:text="فن چرخشی چهارم"
+                android:textSize="30sp" />
+
+            <RadioGroup
+            android:background="@drawable/raidobg"
+                android:id="@+id/radioGroup4"
+                android:checkedButton="@+id/manualC4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/reset4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="ریست کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/automatic4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="اتوماتیک کردن"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/manualC4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layoutDirection="rtl"
+                    android:text="دستی "
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+
+            <ToggleButton
+                android:id="@+id/option14"
+                    android:textColor="#FFFFFF"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/togglebg"
+                android:text="ToggleButton"
+                android:textOff="فن چرخشی خاموش"
+                android:textOn="فن چرخشی روشن" />
+
+            <Button
+                android:id="@+id/sendButtonC4"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonbg"
+                android:text="ارســال دسـتـور"
+                app:backgroundTint="#00FFFFFF"
+                app:backgroundTintMode="src_atop"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

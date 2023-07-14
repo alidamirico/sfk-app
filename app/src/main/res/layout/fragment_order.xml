@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/heaters"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/heater"
+            android:gravity="left|center_vertical"
+            android:padding="8dp"
+            android:text="بــخــاری | Heater"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/vents"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/vent"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="دریــچه ها | VENTS"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heaters" />
+
+        <Button
+            android:id="@+id/fans"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/fan"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text=" FANSPADS | فـن ها و پـد ها"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vents" />
+
+        <Button
+            android:id="@+id/abyari"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/abyar011"
+            android:gravity="left|center_vertical"
+            android:padding="13dp"
+            android:text="آبـیـاری | IRRIGATION"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fans" />
+
+        <Button
+            android:id="@+id/charkheshi"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/fangardesh"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="فـن هـای چـرخشی |C.FANS "
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abyari" />
+
+        <Button
+            android:id="@+id/mehpash"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+
+            android:drawableRight="@drawable/meh"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="مـه پــاش ها | FOGGERS"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/charkheshi" />
+
+        <Button
+            android:id="@+id/shades"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:drawableRight="@drawable/shades"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="پـــرده ها | SHADES"
+            android:textSize="15sp"
+            app:backgroundTint="#FFFFFF"
+            app:backgroundTintMode="src_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mehpash" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
