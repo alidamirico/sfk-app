@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Sfk"
         tools:replace="android:theme">
         <activity
+            android:name=".spinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".testActivity"
             android:exported="false" />
         <activity
