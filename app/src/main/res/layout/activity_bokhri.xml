@@ -39,25 +39,22 @@
             app:layout_constraintTop_toBottomOf="@+id/headerT">
 
 
-            <Spinner
-                android:id="@+id/spinnerBokhari"
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="50dp" />
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="بخاری مورد نظر را انتخاب کنید"
+                android:layout_marginRight="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
 
-
-            <!--            <TextView-->
-            <!--                android:id="@+id/text1"-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_marginStart="1dp"-->
-            <!--                android:layout_marginTop="10dp"-->
-            <!--                android:layout_marginEnd="1dp"-->
-            <!--                android:gravity="center"-->
-            <!--                android:text="بـخـاری اول"-->
-            <!--                android:textSize="30sp" />-->
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <RadioGroup
                 android:id="@+id/radioGroup1"

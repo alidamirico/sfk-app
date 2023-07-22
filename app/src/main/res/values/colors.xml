@@ -14,7 +14,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="base">#1B0E0E</color>
     <color name="bk_chip">#FFFFFF</color>
     <color name="home_icon">#171515</color>
     <color name="home_label">#131313</color>
+    <color name="highlight">#28292E</color>
+    <color name="hint">#948B8A</color>
+    <color name="arrow">#8BC34A</color>
+    <color name="floating_label">#817C7C</color>
 </resources>

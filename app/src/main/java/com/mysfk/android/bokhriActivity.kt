@@ -7,6 +7,7 @@ import android.telephony.SmsManager
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import ir.hamsaa.RtlMaterialSpinner
 
 class bokhriActivity : AppCompatActivity() {
     var radioGroup1: RadioGroup? = null
@@ -38,121 +39,70 @@ class bokhriActivity : AppCompatActivity() {
         }
 
         val items = listOf("بخاری اول", "بخاری دوم", "بخاری سوم","بخاری چهارم","بخاری پنجم","بخاری ششم","بخاری هفتم","بخاری هشتم","بخاری نهم","بخاری دهم","بخاری یازدهم","بخاری دوازدهم","بخاری سیزدهم","بخاری چهاردهم","بخاری پانزدهم")
-        val spinner = findViewById<Spinner>(R.id.spinnerBokhari)
+        val spinner = findViewById<AutoCompleteTextView>(R.id.spinner)
+        spinner.isFocusable = false
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner.adapter = adapter
+        spinner.setAdapter(adapter)
 
         var Bselected =""
 
         button1.setOnClickListener {
-            val position = spinner.selectedItemPosition
-            if (position == 0){
+          val position = spinner.text.toString()
+            if (position == "بخاری اول"){
                  Bselected="01"
-            }else if (position == 1){
+            }else if (position == "بخاری دوم"){
                  Bselected="02"
 
-            }else if (position == 2){
+            }else if (position == "بخاری سوم"){
                  Bselected="03"
 
-            }else if (position == 3){
+            }else if (position == "بخاری چهارم"){
                 Bselected="04"
 
-            }else if (position == 4){
+            }else if (position == "بخاری پنجم"){
                  Bselected="05"
 
-            }else if (position == 5){
+            }else if (position == "بخاری ششم"){
                  Bselected="06"
 
-            }else if (position == 6){
+            }else if (position == "بخاری هفتم"){
                  Bselected="07"
 
-            }else if (position == 7){
+            }else if (position == "بخاری هشتم"){
                  Bselected="08"
 
-            }else if (position == 8){
+            }else if (position == "بخاری نهم"){
                  Bselected="09"
 
-            }else if (position == 9){
+            }else if (position == "بخاری دهم"){
                  Bselected="10"
 
-            }else if (position == 10){
+            }else if (position == "بخاری یازدهم"){
                  Bselected="11"
 
-            }else if (position == 11){
+            }else if (position == "بخاری دوازدهم"){
                 Bselected="12"
 
-            }else if (position == 12){
+            }else if (position == "بخاری سیزدهم"){
                  Bselected="13"
 
-            }else if (position == 13){
+            }else if (position == "بخاری چهاردهم"){
                  Bselected="14"
 
-            }else if (position == 14){
+            }else if (position == "بخاری پانزدهم"){
                 Bselected="15"
 
             }
-            val selectedOption: Int = radioGroup1!!.checkedRadioButtonId
-            radioButton1 = findViewById(selectedOption)
-            if (radioButton1 == reset1){
-                val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
-                builder.setTitle(radioButton1.text)
-                builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
-                builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                    val message = "#9903${Bselected}1"
-                    try {
-                        val smsManager: SmsManager = SmsManager.getDefault()
-                        smsManager.sendTextMessage(number, null, message, null, null)
-                        Toast.makeText(
-                            applicationContext,
-                            " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    } catch (e: Exception) {
-                        Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
-                            .show()
-                        val intent = Intent (this, setnumberActivity::class.java)
-                        this.startActivity(intent)
-                    }
-                }
-                builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
-                    Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
-                        .show()
-                }
-                builder.show()
-            } else if (radioButton1 == auto1) {
-                val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
-                builder.setTitle(radioButton1.text)
-                builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
-                builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                    val message = "#9903${Bselected}2"
-                    try {
-                        val smsManager: SmsManager = SmsManager.getDefault()
-                        smsManager.sendTextMessage(number, null, message, null, null)
-                        Toast.makeText(
-                            applicationContext,
-                            " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
-                            Toast.LENGTH_LONG
-                        ).show()
-                    } catch (e: Exception) {
-                                                Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
-                            .show()
-                        val intent = Intent (this, setnumberActivity::class.java)
-                        this.startActivity(intent)
-                    }
-                }
-                builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
-                    Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
-                        .show()
-                }
-                builder.show()
-            } else if (radioButton1 == mamual1){
-                if (mashal.isChecked == false && fan.isChecked == false){
+            if (Bselected.length ==2){
+                val selectedOption: Int = radioGroup1!!.checkedRadioButtonId
+                radioButton1 = findViewById(selectedOption)
+                if (radioButton1 == reset1){
                     val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
                     builder.setTitle(radioButton1.text)
                     builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                     builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                        val message = "#9903${Bselected}300"
+                        val message = "#9903${Bselected}1"
                         try {
                             val smsManager: SmsManager = SmsManager.getDefault()
                             smsManager.sendTextMessage(number, null, message, null, null)
@@ -162,10 +112,10 @@ class bokhriActivity : AppCompatActivity() {
                                 Toast.LENGTH_LONG
                             ).show()
                         } catch (e: Exception) {
-                                                    Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
-                            .show()
-                        val intent = Intent (this, setnumberActivity::class.java)
-                        this.startActivity(intent)
+                            Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
+                                .show()
+                            val intent = Intent (this, setnumberActivity::class.java)
+                            this.startActivity(intent)
                         }
                     }
                     builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
@@ -173,12 +123,12 @@ class bokhriActivity : AppCompatActivity() {
                             .show()
                     }
                     builder.show()
-                } else if ( mashal.isChecked == true && fan.isChecked == false){
+                } else if (radioButton1 == auto1) {
                     val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
                     builder.setTitle(radioButton1.text)
                     builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                     builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                        val message = "#9903${Bselected}310"
+                        val message = "#9903${Bselected}2"
                         try {
                             val smsManager: SmsManager = SmsManager.getDefault()
                             smsManager.sendTextMessage(number, null, message, null, null)
@@ -188,10 +138,10 @@ class bokhriActivity : AppCompatActivity() {
                                 Toast.LENGTH_LONG
                             ).show()
                         } catch (e: Exception) {
-                                                    Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
-                            .show()
-                        val intent = Intent (this, setnumberActivity::class.java)
-                        this.startActivity(intent)
+                            Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
+                                .show()
+                            val intent = Intent (this, setnumberActivity::class.java)
+                            this.startActivity(intent)
                         }
                     }
                     builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
@@ -199,61 +149,118 @@ class bokhriActivity : AppCompatActivity() {
                             .show()
                     }
                     builder.show()
+                } else if (radioButton1 == mamual1){
+                    if (mashal.isChecked == false && fan.isChecked == false){
+                        val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
+                        builder.setTitle(radioButton1.text)
+                        builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
+                        builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
+                            val message = "#9903${Bselected}300"
+                            try {
+                                val smsManager: SmsManager = SmsManager.getDefault()
+                                smsManager.sendTextMessage(number, null, message, null, null)
+                                Toast.makeText(
+                                    applicationContext,
+                                    " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            } catch (e: Exception) {
+                                Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
+                                    .show()
+                                val intent = Intent (this, setnumberActivity::class.java)
+                                this.startActivity(intent)
+                            }
+                        }
+                        builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
+                            Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                        builder.show()
+                    } else if ( mashal.isChecked == true && fan.isChecked == false){
+                        val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
+                        builder.setTitle(radioButton1.text)
+                        builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
+                        builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
+                            val message = "#9903${Bselected}310"
+                            try {
+                                val smsManager: SmsManager = SmsManager.getDefault()
+                                smsManager.sendTextMessage(number, null, message, null, null)
+                                Toast.makeText(
+                                    applicationContext,
+                                    " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            } catch (e: Exception) {
+                                Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
+                                    .show()
+                                val intent = Intent (this, setnumberActivity::class.java)
+                                this.startActivity(intent)
+                            }
+                        }
+                        builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
+                            Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                        builder.show()
 
-                }else if (mashal.isChecked == false && fan.isChecked == true){
-                    val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
-                    builder.setTitle(radioButton1.text)
-                    builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
-                    builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                        val message = "#9903${Bselected}301"
-                        try {
-                            val smsManager: SmsManager = SmsManager.getDefault()
-                            smsManager.sendTextMessage(number, null, message, null, null)
-                            Toast.makeText(
-                                applicationContext,
-                                " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
-                                Toast.LENGTH_LONG
-                            ).show()
-                        } catch (e: Exception) {
-                                                    Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
-                            .show()
-                        val intent = Intent (this, setnumberActivity::class.java)
-                        this.startActivity(intent)
+                    }else if (mashal.isChecked == false && fan.isChecked == true){
+                        val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
+                        builder.setTitle(radioButton1.text)
+                        builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
+                        builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
+                            val message = "#9903${Bselected}301"
+                            try {
+                                val smsManager: SmsManager = SmsManager.getDefault()
+                                smsManager.sendTextMessage(number, null, message, null, null)
+                                Toast.makeText(
+                                    applicationContext,
+                                    " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            } catch (e: Exception) {
+                                Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
+                                    .show()
+                                val intent = Intent (this, setnumberActivity::class.java)
+                                this.startActivity(intent)
+                            }
                         }
-                    }
-                    builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
-                        Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
-                            .show()
-                    }
-                    builder.show()
-                } else if(mashal.isChecked == true && fan.isChecked == true){
-                    val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
-                    builder.setTitle(radioButton1.text)
-                    builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
-                    builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                        val message = "#9903${Bselected}311"
-                        try {
-                            val smsManager: SmsManager = SmsManager.getDefault()
-                            smsManager.sendTextMessage(number, null, message, null, null)
-                            Toast.makeText(
-                                applicationContext,
-                                " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
-                                Toast.LENGTH_LONG
-                            ).show()
-                        } catch (e: Exception) {
-                                                    Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
-                            .show()
-                        val intent = Intent (this, setnumberActivity::class.java)
-                        this.startActivity(intent)
+                        builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
+                            Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
+                                .show()
                         }
+                        builder.show()
+                    } else if(mashal.isChecked == true && fan.isChecked == true){
+                        val builder = AlertDialog.Builder(this,R.style.AlertDialogTheme)
+                        builder.setTitle(radioButton1.text)
+                        builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
+                        builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
+                            val message = "#9903${Bselected}311"
+                            try {
+                                val smsManager: SmsManager = SmsManager.getDefault()
+                                smsManager.sendTextMessage(number, null, message, null, null)
+                                Toast.makeText(
+                                    applicationContext,
+                                    " ارسال شد، لطفا برای ارسال دستور بعدی کمی صبر کنید",
+                                    Toast.LENGTH_LONG
+                                ).show()
+                            } catch (e: Exception) {
+                                Toast.makeText(applicationContext, "لطفا  ابتدا شماره سیستم را وارد کنید !", Toast.LENGTH_SHORT)
+                                    .show()
+                                val intent = Intent (this, setnumberActivity::class.java)
+                                this.startActivity(intent)
+                            }
+                        }
+                        builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
+                            Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                        builder.show()
                     }
-                    builder.setNegativeButton("خیر") { _: DialogInterface, _: Int ->
-                        Toast.makeText(applicationContext, "شما از ارسال دستور منصرف شدید", Toast.LENGTH_SHORT)
-                            .show()
-                    }
-                    builder.show()
                 }
+            } else {
+                Toast.makeText(applicationContext, "لطفا یک آیتم را انتخاب کنید", Toast.LENGTH_SHORT).show()
             }
+
         }
     }
 }
