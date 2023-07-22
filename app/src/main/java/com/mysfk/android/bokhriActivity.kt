@@ -38,7 +38,10 @@ class bokhriActivity : AppCompatActivity() {
             if(isChecked){ mamual1.isChecked = true }
             else{ mamual1.isChecked = true}
         }
-
+//alidamiri
+        //ali
+        //ssdsd
+        //شمه
         val items = listOf("بخاری اول", "بخاری دوم", "بخاری سوم","بخاری چهارم","بخاری پنجم","بخاری ششم","بخاری هفتم","بخاری هشتم","بخاری نهم","بخاری دهم","بخاری یازدهم","بخاری دوازدهم","بخاری سیزدهم","بخاری چهاردهم","بخاری پانزدهم")
         val spinner = findViewById<AutoCompleteTextView>(R.id.dropDown)
         spinner.isFocusable = false
