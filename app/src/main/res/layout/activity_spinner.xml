@@ -7,7 +7,7 @@
     tools:context=".spinnerActivity">
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/dropDown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -25,6 +25,6 @@
         android:text="show spinner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/dropDown" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

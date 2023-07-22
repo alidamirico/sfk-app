@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
 
-        applicationId "com.sabrina1402view.android"
+        applicationId "com.sabrina.android"
         minSdkVersion 23
         targetSdkVersion 32
         versionCode 3

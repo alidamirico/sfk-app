@@ -14,7 +14,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
 
-class passwordActivity : AppCompatActivity() {
+class loginActivity : AppCompatActivity() {
 
     private var listPermissions = arrayOf(
         Manifest.permission.READ_SMS,
@@ -54,7 +54,7 @@ class passwordActivity : AppCompatActivity() {
 
         if (isFirstRun) {
             //show start activity
-            startActivity(Intent(this@passwordActivity, WelcomeActivity::class.java))
+            startActivity(Intent(this@loginActivity, WelcomeActivity::class.java))
         }
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
             .putBoolean("isFirstRun", false).commit()

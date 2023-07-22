@@ -1,10 +1,8 @@
 package com.mysfk.android
 
-import android.Manifest
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import com.github.paolorotolo.appintro.AppIntro2
@@ -16,7 +14,7 @@ class WelcomeActivity : AppIntro2() {
 
 
     private fun goToMain() {
-        startActivity(Intent(this,passwordActivity::class.java))
+        startActivity(Intent(this,loginActivity::class.java))
     }
 
  //override fun onSkipPressed(currentFragment: Fragment?) {

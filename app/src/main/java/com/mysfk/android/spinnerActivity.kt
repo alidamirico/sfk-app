@@ -13,7 +13,7 @@ class spinnerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_spinner)
 
         val items = listOf("بخاری 1", "بخاری 2", "بخاری3")
-        val spinner = findViewById<Spinner>(R.id.spinner)
+        val spinner = findViewById<Spinner>(R.id.dropDown)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter

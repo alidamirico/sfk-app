@@ -26,7 +26,7 @@
             android:exported="false" />
         <activity android:name=".setPasswordActivity" />
         <activity
-            android:name=".passwordActivity"
+            android:name=".loginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

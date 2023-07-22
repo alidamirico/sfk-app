@@ -40,10 +40,10 @@ class bokhriActivity : AppCompatActivity() {
         }
 
         val items = listOf("بخاری اول", "بخاری دوم", "بخاری سوم","بخاری چهارم","بخاری پنجم","بخاری ششم","بخاری هفتم","بخاری هشتم","بخاری نهم","بخاری دهم","بخاری یازدهم","بخاری دوازدهم","بخاری سیزدهم","بخاری چهاردهم","بخاری پانزدهم")
-        val spinner = findViewById<AutoCompleteTextView>(R.id.spinner)
+        val spinner = findViewById<AutoCompleteTextView>(R.id.dropDown)
         spinner.isFocusable = false
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, items)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        val adapter = ArrayAdapter(this, R.layout.dropdown_items, items)
+        adapter.setDropDownViewResource(R.layout.dropdown_items)
         spinner.setAdapter(adapter)
 
         var Itemselected =""
