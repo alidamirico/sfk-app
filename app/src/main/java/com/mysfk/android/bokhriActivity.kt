@@ -46,56 +46,56 @@ class bokhriActivity : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.setAdapter(adapter)
 
-        var Bselected =""
+        var Itemselected =""
 
         button1.setOnClickListener {
           val position = spinner.text.toString()
             if (position == "بخاری اول"){
-                 Bselected="01"
+                 Itemselected="01"
             }else if (position == "بخاری دوم"){
-                 Bselected="02"
+                 Itemselected="02"
 
             }else if (position == "بخاری سوم"){
-                 Bselected="03"
+                 Itemselected="03"
 
             }else if (position == "بخاری چهارم"){
-                Bselected="04"
+                Itemselected="04"
 
             }else if (position == "بخاری پنجم"){
-                 Bselected="05"
+                 Itemselected="05"
 
             }else if (position == "بخاری ششم"){
-                 Bselected="06"
+                 Itemselected="06"
 
             }else if (position == "بخاری هفتم"){
-                 Bselected="07"
+                 Itemselected="07"
 
             }else if (position == "بخاری هشتم"){
-                 Bselected="08"
+                 Itemselected="08"
 
             }else if (position == "بخاری نهم"){
-                 Bselected="09"
+                 Itemselected="09"
 
             }else if (position == "بخاری دهم"){
-                 Bselected="10"
+                 Itemselected="10"
 
             }else if (position == "بخاری یازدهم"){
-                 Bselected="11"
+                 Itemselected="11"
 
             }else if (position == "بخاری دوازدهم"){
-                Bselected="12"
+                Itemselected="12"
 
             }else if (position == "بخاری سیزدهم"){
-                 Bselected="13"
+                 Itemselected="13"
 
             }else if (position == "بخاری چهاردهم"){
-                 Bselected="14"
+                 Itemselected="14"
 
             }else if (position == "بخاری پانزدهم"){
-                Bselected="15"
+                Itemselected="15"
 
             }
-            if (Bselected.length ==2){
+            if (Itemselected.length ==2){
                 val selectedOption: Int = radioGroup1!!.checkedRadioButtonId
                 radioButton1 = findViewById(selectedOption)
                 if (radioButton1 == reset1){
@@ -103,7 +103,7 @@ class bokhriActivity : AppCompatActivity() {
                     builder.setTitle(radioButton1.text)
                     builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                     builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                        val message = "#9903${Bselected}1"
+                        val message = "#9903${Itemselected}1"
                         try {
                             val smsManager: SmsManager = SmsManager.getDefault()
                             smsManager.sendTextMessage(number, null, message, null, null)
@@ -129,7 +129,7 @@ class bokhriActivity : AppCompatActivity() {
                     builder.setTitle(radioButton1.text)
                     builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                     builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                        val message = "#9903${Bselected}2"
+                        val message = "#9903${Itemselected}2"
                         try {
                             val smsManager: SmsManager = SmsManager.getDefault()
                             smsManager.sendTextMessage(number, null, message, null, null)
@@ -156,7 +156,7 @@ class bokhriActivity : AppCompatActivity() {
                         builder.setTitle(radioButton1.text)
                         builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                         builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                            val message = "#9903${Bselected}300"
+                            val message = "#9903${Itemselected}300"
                             try {
                                 val smsManager: SmsManager = SmsManager.getDefault()
                                 smsManager.sendTextMessage(number, null, message, null, null)
@@ -182,7 +182,7 @@ class bokhriActivity : AppCompatActivity() {
                         builder.setTitle(radioButton1.text)
                         builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                         builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                            val message = "#9903${Bselected}310"
+                            val message = "#9903${Itemselected}310"
                             try {
                                 val smsManager: SmsManager = SmsManager.getDefault()
                                 smsManager.sendTextMessage(number, null, message, null, null)
@@ -209,7 +209,7 @@ class bokhriActivity : AppCompatActivity() {
                         builder.setTitle(radioButton1.text)
                         builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                         builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                            val message = "#9903${Bselected}301"
+                            val message = "#9903${Itemselected}301"
                             try {
                                 val smsManager: SmsManager = SmsManager.getDefault()
                                 smsManager.sendTextMessage(number, null, message, null, null)
@@ -235,7 +235,7 @@ class bokhriActivity : AppCompatActivity() {
                         builder.setTitle(radioButton1.text)
                         builder.setMessage("آیا برای ارسال دستور مطمئنید ؟")
                         builder.setPositiveButton("بلی") { _: DialogInterface, _: Int ->
-                            val message = "#9903${Bselected}311"
+                            val message = "#9903${Itemselected}311"
                             try {
                                 val smsManager: SmsManager = SmsManager.getDefault()
                                 smsManager.sendTextMessage(number, null, message, null, null)
