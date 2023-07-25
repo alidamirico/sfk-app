@@ -38,10 +38,6 @@ class bokhriActivity : AppCompatActivity() {
             if(isChecked){ mamual1.isChecked = true }
             else{ mamual1.isChecked = true}
         }
-//alidamiri
-        //ali
-        //ssdsd
-        //شمه
         val items = listOf("بخاری اول", "بخاری دوم", "بخاری سوم","بخاری چهارم","بخاری پنجم","بخاری ششم","بخاری هفتم","بخاری هشتم","بخاری نهم","بخاری دهم","بخاری یازدهم","بخاری دوازدهم","بخاری سیزدهم","بخاری چهاردهم","بخاری پانزدهم")
         val spinner = findViewById<AutoCompleteTextView>(R.id.dropDown)
         spinner.isFocusable = false
@@ -53,50 +49,66 @@ class bokhriActivity : AppCompatActivity() {
 
         button1.setOnClickListener {
           val position = spinner.text.toString()
-            if (position == "بخاری اول"){
-                 Itemselected="01"
-            }else if (position == "بخاری دوم"){
-                 Itemselected="02"
+            when (position) {
+                "بخاری اول" -> {
+                    Itemselected="01"
+                }
+                "بخاری دوم" -> {
+                    Itemselected="02"
 
-            }else if (position == "بخاری سوم"){
-                 Itemselected="03"
+                }
+                "بخاری سوم" -> {
+                    Itemselected="03"
 
-            }else if (position == "بخاری چهارم"){
-                Itemselected="04"
+                }
+                "بخاری چهارم" -> {
+                    Itemselected="04"
 
-            }else if (position == "بخاری پنجم"){
-                 Itemselected="05"
+                }
+                "بخاری پنجم" -> {
+                    Itemselected="05"
 
-            }else if (position == "بخاری ششم"){
-                 Itemselected="06"
+                }
+                "بخاری ششم" -> {
+                    Itemselected="06"
 
-            }else if (position == "بخاری هفتم"){
-                 Itemselected="07"
+                }
+                "بخاری هفتم" -> {
+                    Itemselected="07"
 
-            }else if (position == "بخاری هشتم"){
-                 Itemselected="08"
+                }
+                "بخاری هشتم" -> {
+                    Itemselected="08"
 
-            }else if (position == "بخاری نهم"){
-                 Itemselected="09"
+                }
+                "بخاری نهم" -> {
+                    Itemselected="09"
 
-            }else if (position == "بخاری دهم"){
-                 Itemselected="10"
+                }
+                "بخاری دهم" -> {
+                    Itemselected="10"
 
-            }else if (position == "بخاری یازدهم"){
-                 Itemselected="11"
+                }
+                "بخاری یازدهم" -> {
+                    Itemselected="11"
 
-            }else if (position == "بخاری دوازدهم"){
-                Itemselected="12"
+                }
+                "بخاری دوازدهم" -> {
+                    Itemselected="12"
 
-            }else if (position == "بخاری سیزدهم"){
-                 Itemselected="13"
+                }
+                "بخاری سیزدهم" -> {
+                    Itemselected="13"
 
-            }else if (position == "بخاری چهاردهم"){
-                 Itemselected="14"
+                }
+                "بخاری چهاردهم" -> {
+                    Itemselected="14"
 
-            }else if (position == "بخاری پانزدهم"){
-                Itemselected="15"
+                }
+                "بخاری پانزدهم" -> {
+                    Itemselected="15"
 
+                }
             }
             if (Itemselected.length ==2){
                 val selectedOption: Int = radioGroup1!!.checkedRadioButtonId

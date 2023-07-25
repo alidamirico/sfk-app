@@ -7,6 +7,7 @@
     android:drawablePadding="10dp"
     android:ellipsize="end"
     android:padding="10dp"
+    android:gravity="center"
     android:singleLine="true"
     android:textColor="@android:color/black"
     android:textSize="16sp" />

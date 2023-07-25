@@ -52,6 +52,7 @@
                 <androidx.appcompat.widget.AppCompatAutoCompleteTextView
                     android:id="@+id/dropDown"
                     android:layout_width="match_parent"
+                    android:gravity="center"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
