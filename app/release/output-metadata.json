@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.sabrinamaster.android",
+  "applicationId": "com.sabrina1402.android",
   "variantName": "release",
   "elements": [
     {
@@ -12,7 +12,7 @@
       "filters": [],
       "attributes": [],
       "versionCode": 3,
-      "versionName": "sabrina.view.v3.beta",
+      "versionName": "sabrina.view.v3.1402",
       "outputFile": "app-release.apk"
     }
   ],
