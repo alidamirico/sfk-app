@@ -113,7 +113,7 @@ android:checkedButton="@+id/manual1"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:text="ToggleButton"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:textColor="#FFFFFF"
                     android:textOn="پمپ مه پاش روشن"
                     android:textOff="پمپ مه پاش خاموش"/>
@@ -128,8 +128,9 @@ android:checkedButton="@+id/manual1"
                     android:background="@drawable/togglebg"
                     android:text="ToggleButton"
                     android:textColor="#FFFFFF"
-                    android:textOff="مولد CO2 خاموش"
-                    android:textOn="مولد CO2 روشن" />
+                    android:textSize="11sp"
+                    android:textOff="فن چرخشی خاموش"
+                    android:textOn="فن چرخشی روشن" />
             </LinearLayout>
 
             <Button
