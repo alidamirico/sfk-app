@@ -17,6 +17,9 @@ class charkheshiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_charkheshi)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setTitle("فن تهویه")
+
         radioGroup1 = findViewById(R.id.radioGroup1)
         button1 = findViewById(R.id.sendButton1)
         val reset1 = findViewById<RadioButton>(R.id.reset1)

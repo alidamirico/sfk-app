@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
-                android:hint="فن چرخشی مورد نظر را انتخاب کنید"
+                android:hint="فن تهویه مورد نظر را انتخاب کنید"
                 android:layout_marginRight="20dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
 
@@ -107,8 +107,9 @@ android:checkedButton="@+id/manual1"
                 android:background="@drawable/togglebg"
                 android:text="ToggleButton"
                 android:textColor="#FFFFFF"
-                android:textOff="فن چرخشی خاموش"
-                android:textOn="فن چرخشی روشن" />
+                android:textSize="11sp"
+                android:textOff="فن تهویه خاموش"
+                android:textOn="فن تهویه روشن" />
 
             <Button
                 android:id="@+id/sendButton1"

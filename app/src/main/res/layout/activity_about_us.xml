@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:gravity="right"
-                    android:text="SFK_1400_VIEW"
+                    android:text="SFK_1402_VIEW"
                     android:textColor="#3E3838"
                     android:textSize="13sp" />
             </LinearLayout>

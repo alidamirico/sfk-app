@@ -10,11 +10,11 @@ android {
 
     defaultConfig {
 
-        applicationId "com.sabrinamaster.android"
+        applicationId "com.sabrina1402.android"
         minSdkVersion 23
         targetSdkVersion 32
         versionCode 3
-        versionName "sabrina.view.v3.beta"
+        versionName "sabrina.view.v3.1402"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
