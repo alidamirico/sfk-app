@@ -36,7 +36,7 @@ class charkheshiActivity : AppCompatActivity() {
             }
         }
 
-        val items = listOf("فن چرخشی اول", "فن چرخشی دوم", "فن چرخشی سوم", "فن چرخشی چهارم")
+        val items = listOf("فن تهویه اول", "فن تهویه دوم", "فن تهویه سوم", "فن تهویه چهارم")
         val spinner = findViewById<AutoCompleteTextView>(R.id.dropDown)
         spinner.isFocusable = false
         val adapter = ArrayAdapter(this, R.layout.dropdown_items, items)
@@ -48,21 +48,21 @@ class charkheshiActivity : AppCompatActivity() {
         button1.setOnClickListener {
             val position = spinner.text.toString()
             when (position) {
-                "فن چرخشی اول" -> {
+                "فن تهویه اول" -> {
                     Itemselected = "01"
                 }
 
-                "فن چرخشی دوم" -> {
+                "فن تهویه دوم" -> {
                     Itemselected = "02"
 
                 }
 
-                "فن چرخشی سوم" -> {
+                "فن تهویه سوم" -> {
                     Itemselected = "03"
 
                 }
 
-                "فن چرخشی چهارم" -> {
+                "فن تهویه چهارم" -> {
                     Itemselected = "04"
 
                 }

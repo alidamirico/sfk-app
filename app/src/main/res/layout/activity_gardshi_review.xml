@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fangreportbaner" />
+        app:srcCompat="@drawable/fangbaneer" />
 
 
     <LinearLayout
@@ -49,7 +49,7 @@
             android:insetBottom="5dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:text="گزارش گیری فن چرخشی اول"
+            android:text="گزارش گیری فن تهویه اول"
             android:background="@drawable/colorsreview"
             android:drawableRight="@drawable/fangardesh"
             android:textSize="13sp" />
@@ -64,7 +64,7 @@
             android:layout_marginBottom="10dp"
             android:insetBottom="5dp"
             android:layout_gravity="center"
-            android:text="گزارش گیری فن چرخشی دوم"
+            android:text="گزارش گیری فن تهویه دوم"
             android:background="@drawable/colorsreview"
             android:drawableRight="@drawable/fangardesh"
             android:textSize="13sp" />
@@ -79,7 +79,7 @@
             android:insetBottom="5dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
-            android:text="گزارش گیری فن چردشی سوم"
+            android:text="گزارش گیری فن تهویه سوم"
             android:background="@drawable/colorsreview"
             android:drawableRight="@drawable/fangardesh"
             android:textSize="13sp" />
@@ -94,7 +94,7 @@
             android:insetBottom="5dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"
-            android:text="گزارش گیری فن چرخشی چهارم"
+            android:text="گزارش گیری فن تهویه چهارم"
             android:background="@drawable/colorsreview"
             android:drawableRight="@drawable/fangardesh"
             android:textSize="13sp" />
