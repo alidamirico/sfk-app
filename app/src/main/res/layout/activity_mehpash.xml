@@ -120,16 +120,16 @@ android:checkedButton="@+id/manual1"
 
                 <ToggleButton
                     android:id="@+id/option21"
-                    android:textColor="#FFFFFF"
-                    android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="ToggleButton"
-                    android:background="@drawable/togglebg"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
-                    android:textOn="مولد CO2 روشن"
-                    android:textOff="مولد CO2 خاموش"/>
+                    android:layout_weight="1"
+                    android:background="@drawable/togglebg"
+                    android:text="ToggleButton"
+                    android:textColor="#FFFFFF"
+                    android:textOff="مولد CO2 خاموش"
+                    android:textOn="مولد CO2 روشن" />
             </LinearLayout>
 
             <Button

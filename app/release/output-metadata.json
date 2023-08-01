@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.sabrina.android",
+  "applicationId": "com.sabrinamaster.android",
   "variantName": "release",
   "elements": [
     {

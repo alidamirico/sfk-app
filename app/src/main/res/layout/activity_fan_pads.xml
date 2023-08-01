@@ -114,23 +114,23 @@ android:checkedButton="@+id/manual1"
                 android:layout_marginEnd="10dp"
                 android:text="ToggleButton"
                 android:textOn="پمپ روشن"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textColor="#FFFFFF"
                 android:textOff="پمپ خاموش"/>
 
             <ToggleButton
                 android:id="@+id/option31"
-                    android:textColor="#FFFFFF"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="ToggleButton"
-                android:background="@drawable/togglebg"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:textSize="10sp"
-                android:textOn="فن دوم روشن"
-                android:textOff="فن دوم خاموش"/>
+                android:layout_weight="1"
+                android:background="@drawable/togglebg"
+                android:text="ToggleButton"
+                android:textColor="#FFFFFF"
+                android:textOff="فن سری دوم خاموش"
+                android:textOn="فن سری دوم روشن"
+                android:textSize="8sp" />
 
             <ToggleButton
                 android:id="@+id/option21"
@@ -142,9 +142,9 @@ android:checkedButton="@+id/manual1"
                 android:background="@drawable/togglebg"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:textSize="10sp"
-                android:textOn="فن اول روشن"
-                android:textOff="فن اول خاموش"/>
+                android:textSize="9sp"
+                android:textOn="فن سری اول روشن"
+                android:textOff="فن سری اول خاموش"/>
 
 
         </LinearLayout>

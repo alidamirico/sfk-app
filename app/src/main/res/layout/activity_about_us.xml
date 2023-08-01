@@ -63,7 +63,7 @@
             android:id="@+id/comany"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="تحت نظر سانا فزاز کبیر"
+            android:text="تحت نظر سانا فراز کبیر"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -133,11 +133,11 @@
                     android:id="@+id/textversioninfo2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="13sp"
                     android:layout_marginTop="4dp"
-                    android:textColor="#3E3838"
                     android:gravity="right"
-                    android:text="SFK_View_1400" />
+                    android:text="SFK_1400_VIEW"
+                    android:textColor="#3E3838"
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <LinearLayout

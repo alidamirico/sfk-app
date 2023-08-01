@@ -115,6 +115,7 @@
                     android:background="@drawable/togglebg"
                     android:text="ToggleButton"
                     android:textColor="#FFFFFF"
+                    android:textSize="12sp"
                     android:textOff="مشعل خاموش"
                     android:textOn="مشعل روشن" />
 
@@ -128,8 +129,9 @@
                     android:background="@drawable/togglebg"
                     android:text="ToggleButton"
                     android:textColor="#FFFFFF"
-                    android:textOff="فن سری دوم خاموش"
-                    android:textOn="فن سری دوم روشن" />
+                    android:textSize="12sp"
+                    android:textOff="فن بخاری خاموش"
+                    android:textOn="فن بخاری روشن" />
             </LinearLayout>
 
             <Button
