@@ -22,7 +22,7 @@ class SettingsFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?, savedInstanceState: Bundle?
     ): View?
-            = inflater.inflate(R.layout.fragment_reports, container, false).apply {
+            = inflater.inflate(R.layout.fragment_settings, container, false).apply {
 
 
         val sharedPeref = requireActivity().getSharedPreferences("setNumber", Context.MODE_PRIVATE)

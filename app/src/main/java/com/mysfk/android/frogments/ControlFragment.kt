@@ -14,7 +14,7 @@ class ControlFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?, savedInstanceState: Bundle?): View?
-            = inflater.inflate(R.layout.fragment_order, container, false).apply {
+            = inflater.inflate(R.layout.fragment_control, container, false).apply {
 
         val openBohary= findViewById<Button>(R.id.heaters)
         openBohary.setOnClickListener {
