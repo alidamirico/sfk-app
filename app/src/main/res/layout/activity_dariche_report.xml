@@ -78,7 +78,7 @@
             android:insetBottom="5dp"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
-            android:text="ایستگاه اندازه گیری سوم"
+            android:text="گزارش گیری دریچه چهارم"
             android:background="@drawable/colorsreview"
             android:drawableRight="@drawable/vent"
             android:textSize="15sp" />
